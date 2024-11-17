@@ -11,7 +11,7 @@ from dotenv import load_dotenv  # Load environment variables from a .env file
 load_dotenv()
 
 # Initialize OpenAI client
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "YOUR_API_KEY"
 
 # Function to trim the description to fit within the limit
 def trim_prompt(prompt, max_length=1000):
